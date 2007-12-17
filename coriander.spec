@@ -16,7 +16,6 @@ BuildRequires:	libdc1394-devel >= 2.0.0-0.rc5
 BuildRequires:	libgnomeui2-devel
 BuildRequires:	libraw1394-devel
 BuildRequires:	libxv-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 Coriander is the Linux graphical user interface (GUI) for controlling
