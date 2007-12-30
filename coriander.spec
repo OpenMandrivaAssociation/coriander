@@ -1,18 +1,18 @@
 %define version		2.0.0
 %define subversion	rc5
-%define release		%mkrel 0.%{subversion}.1
+%define release		%mkrel 0.%{subversion}.2
 
 Summary:	Coriander is a GUI for controlling IEEE1394 cameras
 Name:		coriander
 Version:	%{version}
 Release:	%{release}
-License:	GPL
+License:	GPLv2+
 Group:		Video
 Source:		%{name}-%{version}-%{subversion}.tar.bz2
 URL:		http://damien.douxchamps.net/ieee1394/coriander/
 BuildRequires:	SDL-devel
 BuildRequires:	ffmpeg-devel
-BuildRequires:	libdc1394-devel >= 2.0.0-0.rc5
+BuildRequires:	libdc1394-20-devel
 BuildRequires:	libgnomeui2-devel
 BuildRequires:	libraw1394-devel
 BuildRequires:	libxv-devel
@@ -34,7 +34,7 @@ scientific cameras too.
 %setup -q -n %{name}-%{version}-%{subversion}
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
@@ -46,7 +46,6 @@ rm -rf ${RPM_BUILD_ROOT}
 %files
 %defattr(-,root,root)
 %{_bindir}/coriander
+%dir %{_datadir}/pixmaps/coriander
 %{_datadir}/pixmaps/coriander/coriander-icon.png
 %{_datadir}/pixmaps/coriander/coriander-logo.png
-
-
