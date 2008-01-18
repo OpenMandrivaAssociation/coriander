@@ -1,6 +1,6 @@
 %define version		2.0.0
-%define subversion	rc5
-%define release		%mkrel 0.%{subversion}.2
+%define subversion	rc6
+%define release		%mkrel 0.%{subversion}.1
 
 Summary:	Coriander is a GUI for controlling IEEE1394 cameras
 Name:		coriander
