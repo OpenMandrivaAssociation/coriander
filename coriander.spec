@@ -1,6 +1,5 @@
 %define version		2.0.0
-%define subversion	rc6
-%define release		%mkrel 0.%{subversion}.1
+%define release		%mkrel 1
 
 Summary:	GUI for controlling IEEE1394 cameras
 Name:		coriander
@@ -8,7 +7,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPLv2+
 Group:		Video
-Source:		%{name}-%{version}-%{subversion}.tar.bz2
+Source:		%{name}-%{version}.tar.gz
 URL:		http://damien.douxchamps.net/ieee1394/coriander/
 BuildRequires:	SDL-devel
 BuildRequires:	ffmpeg-devel
@@ -31,7 +30,7 @@ scientific cameras too.
 
 %prep
 
-%setup -q -n %{name}-%{version}-%{subversion}
+%setup -q
 
 %build
 %configure2_5x
