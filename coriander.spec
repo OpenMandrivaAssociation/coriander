@@ -1,5 +1,5 @@
-%define version		2.0.0
-%define release		%mkrel 2
+%define version		2.0.1
+%define release		%mkrel 1
 
 Summary:	GUI for controlling IEEE1394 cameras
 Name:		coriander
@@ -7,11 +7,11 @@ Version:	%{version}
 Release:	%{release}
 License:	GPLv2+
 Group:		Video
-Source:		%{name}-%{version}.tar.gz
+Source:		http://downloads.sourceforge.net/project/coriander/coriander-2/%{version}/%{name}-%{version}.tar.gz
 URL:		http://damien.douxchamps.net/ieee1394/coriander/
 BuildRequires:	SDL-devel
-BuildRequires:	ffmpeg-devel
-BuildRequires:	libdc1394-20-devel
+BuildRequires:	ftp-devel
+BuildRequires:	dc1394-devel
 BuildRequires:	libgnomeui2-devel
 BuildRequires:	libraw1394-devel
 BuildRequires:	libxv-devel
@@ -29,15 +29,16 @@ This includes most 1394 webcams and a majority of industrial or
 scientific cameras too.
 
 %prep
-
 %setup -q
 
 %build
+NOCONFIGURE=yes ./autogen.sh
 %configure2_5x
 %make
 
 %install
-%makeinstall
+rm -rf ${RPM_BUILD_ROOT}
+%makeinstall_std
 
 %clean
 rm -rf ${RPM_BUILD_ROOT}
