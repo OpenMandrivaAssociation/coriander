@@ -49,3 +49,68 @@ rm -rf ${RPM_BUILD_ROOT}
 %dir %{_datadir}/pixmaps/coriander
 %{_datadir}/pixmaps/coriander/coriander-icon.png
 %{_datadir}/pixmaps/coriander/coriander-logo.png
+
+
+%changelog
+* Sat Oct 02 2010 Funda Wang <fwang@mandriva.org> 2.0.1-1mdv2011.0
++ Revision: 582469
+- New version 2.0.1
+
+* Thu Sep 10 2009 Thierry Vignaud <tv@mandriva.org> 2.0.0-2mdv2010.0
++ Revision: 437126
+- rebuild
+
+* Sat Jun 21 2008 Stefan van der Eijk <stefan@mandriva.org> 2.0.0-1mdv2009.0
++ Revision: 227806
+- 2.0.0
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - fix "foobar is blabla" summary (=> "blabla") so that it looks nice in rpmdrake
+
+* Fri Jan 18 2008 Stefan van der Eijk <stefan@mandriva.org> 2.0.0-0.rc6.1mdv2008.1
++ Revision: 154563
+- 2.0.0 rc6
+
+  + Funda Wang <fwang@mandriva.org>
+    - rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Mon Jun 11 2007 Stefan van der Eijk <stefan@mandriva.org> 2.0.0-0.rc5.1mdv2008.0
++ Revision: 38012
+- 2.0.0-rc5
+
+
+* Sun Jan 21 2007 Stefan van der Eijk <stefan@mandriva.org> 2.0.0-0.rc4.1mdv2007.0
++ Revision: 111251
+- 2.0.0-rc4
+- 2.0.0-rc3
+- 2.0.0-rc2
+
+* Wed Oct 25 2006 Stefan van der Eijk <stefan@mandriva.org> 2.0.0-0.rc1.1mdv2007.0
++ Revision: 72245
+- 2.0.0-rc1
+- Import coriander
+
+* Thu Aug 03 2006 Frederic Crozat <fcrozat@mandriva.com> 2.0.0-0.pre6.3mdv2007.0
+- Rebuild with latest dbus
+
+* Mon Jun 12 2006 Stefan van der Eijk <stefan@eijk.nu> 2.0.0-0.pre6.2mdk
+- fix BuildRequires for sparc64
+
+* Thu May 11 2006 Stefan van der Eijk <stefan@eijk.nu> 2.0.0-0.pre6.1mdk
+- 2.0.0-pre6
+
+* Wed Mar 22 2006 Jerome Martin <jerome.f.martin@free.fr> 2.0.0-0.pre5.2mdk
+- Fixed BuildRequires
+
+* Mon Mar 20 2006 Stefan van der Eijk <stefan@eijk.nu> 2.0.0-0.pre5.1mdk
+- 2.0.0-pre5
+
+* Tue Dec 27 2005 Stefan van der Eijk <stefan@eijk.nu> 2.0.0-0.pre4.1mdk
+- initial package
+
