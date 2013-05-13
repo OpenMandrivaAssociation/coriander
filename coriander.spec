@@ -1,5 +1,5 @@
 %define version		2.0.1
-%define release		%mkrel 1
+%define release 		2
 
 Summary:	GUI for controlling IEEE1394 cameras
 Name:		coriander
@@ -15,7 +15,6 @@ BuildRequires:	dc1394-devel
 BuildRequires:	pkgconfig(libgnomeui-2.0)
 BuildRequires:	pkgconfig(libraw1394)
 BuildRequires:	pkgconfig(xv)
-BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
 Coriander is the Linux graphical user interface (GUI) for controlling
