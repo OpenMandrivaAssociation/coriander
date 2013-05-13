@@ -12,9 +12,9 @@ URL:		http://damien.douxchamps.net/ieee1394/coriander/
 BuildRequires:	SDL-devel
 BuildRequires:	ftp-devel
 BuildRequires:	dc1394-devel
-BuildRequires:	libgnomeui2-devel
-BuildRequires:	libraw1394-devel
-BuildRequires:	libxv-devel
+BuildRequires:	pkgconfig(libgnomeui-2.0)
+BuildRequires:	pkgconfig(libraw1394)
+BuildRequires:	pkgconfig(xv)
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 
 %description
