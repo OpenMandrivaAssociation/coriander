@@ -1,5 +1,5 @@
 %define version		2.0.1
-%define release 		2
+%define release 		3
 
 Summary:	GUI for controlling IEEE1394 cameras
 Name:		coriander
