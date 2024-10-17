@@ -8,7 +8,7 @@ Release:	%{release}
 License:	GPLv2+
 Group:		Video
 Source:		http://downloads.sourceforge.net/project/coriander/coriander-2/%{version}/%{name}-%{version}.tar.gz
-URL:		http://damien.douxchamps.net/ieee1394/coriander/
+URL:		https://damien.douxchamps.net/ieee1394/coriander/
 BuildRequires:	SDL-devel
 BuildRequires:	ftp-devel
 BuildRequires:	dc1394-devel
